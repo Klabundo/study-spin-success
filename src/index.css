@@ -195,7 +195,22 @@ All colors MUST be HSL.
     50% { box-shadow: 0 0 40px hsl(var(--casino-gold) / 0.6); }
   }
 
+  /* Hover Scale Animation */
+  .hover-scale {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .hover-scale:hover {
+    transform: scale(1.05);
+  }
+
+  /* Pulse Animation */
   .pulse-glow {
     animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  /* Custom Transition */
+  .duration-4000 {
+    transition-duration: 4000ms;
   }
 }
