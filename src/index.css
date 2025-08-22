@@ -128,13 +128,23 @@ All colors MUST be HSL.
   /* Casino button variants */
   .btn-casino-gold {
     @apply bg-gradient-to-r from-casino-gold to-casino-gold-dark text-primary-foreground font-bold px-8 py-4 rounded-xl;
-    @apply shadow-lg hover:shadow-glow-gold transition-all duration-300;
+    @apply shadow-lg transition-all duration-300;
     @apply hover:scale-105 active:scale-95;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  .btn-casino-gold:hover {
+    box-shadow: var(--glow-gold);
   }
 
   .btn-casino-royal {
     @apply bg-gradient-to-r from-casino-purple to-casino-pink text-white font-bold px-6 py-3 rounded-lg;
-    @apply shadow-lg hover:shadow-glow-royal transition-all duration-300;
+    @apply shadow-lg transition-all duration-300;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  }
+
+  .btn-casino-royal:hover {
+    box-shadow: var(--glow-royal);
   }
 
   .card-casino {
